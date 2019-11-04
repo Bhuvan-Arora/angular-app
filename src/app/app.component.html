@@ -1,23 +1,4 @@
-<!-- <app-success-alert></app-success-alert>
+<app-success-alert></app-success-alert>
 <app-warning-alert></app-warning-alert>
 <app-server-component></app-server-component>
-<app-directives></app-directives> -->
-
-<div class="position-relative" style="background-color: orange;height:600px; width:900px">
-
-    <div class="nav-btn position-absolute p-1" 
-    [ngClass]="{'d-none': isNavOpen == true, 'd-block' : isNavOpen == false}" 
-    (click)="toggleNav()"
-    #navButton>Open Nav</div>
-
-    <div class="nav-sheet position-absolute" 
-    [ngClass]="{'d-block': isNavOpen == true, 'd-none' : isNavOpen == false}"  
-    #navSheet>
-        <div class="close-btn m-3" (click)="toggleNav()">X Close</div>
-        <div class="m-1 d-flex justify-content-center">
-            <!-- Switchery Libarary Link : https://www.npmjs.com/package/ngx-ui-switch -->
-            <ui-switch [(ngModel)]="isSwitchEnable"></ui-switch>
-        </div>
-        <div class="m-1 text-center" style="color: white;"> Switch Enable : {{isSwitchEnable}}</div>
-    </div>
-</div>
+<app-directives></app-directives>
