@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-app';
+ 
+  isNavOpen:boolean = false;
+  isSwitchEnable:boolean = false;
+  
+  @ViewChild('navSheet', {static : false}) navSheet; 
+  @ViewChild('navButton', {static : false}) navButton; 
+
+  toggleNav(){
+    if(this.isNavOpen)
+     this.isNavOpen = false;
+    else
+      this.isNavOpen = true;
+  }
+
+
 }

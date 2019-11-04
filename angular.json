@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-app": {
+    "dheeraj-angular-task": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-app",
+            "outputPath": "dist/dheeraj-angular-task",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -59,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-app:build"
+            "browserTarget": "dheeraj-angular-task:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-app:build:production"
+              "browserTarget": "dheeraj-angular-task:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-app:build"
+            "browserTarget": "dheeraj-angular-task:build"
           }
         },
         "test": {
@@ -107,15 +107,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-app:serve"
+            "devServerTarget": "dheeraj-angular-task:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-app:serve:production"
+              "devServerTarget": "dheeraj-angular-task:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-app"
+  "defaultProject": "dheeraj-angular-task"
 }
